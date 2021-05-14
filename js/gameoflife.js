@@ -36,7 +36,7 @@ const printCells = (state) => {
   let accumulator = '';
   for (let y=topRight[1]; y >= bottomLeft[1]; y--){
     let row = [];
-    for (let x=bottomLeft[0]; x<=topRight[1]; x++){
+    for (let x=bottomLeft[0]; x<=topRight[0]; x++){
       row.push(printCell([x,y], state));
     }
     accumulator += row.join(' ') +'/n';
